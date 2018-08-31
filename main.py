@@ -11,7 +11,7 @@ from os import path
 
 
 def usage():
-    print("Usage: python Main.py [options] \n\n\
+    print("Usage: python main.py [options] \n\n\
     Options: \n\
     \t-h\tPrint a brief help message and exits..\n\
     \t-s\t(Required) Specify a source image.\n\
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     except getopt.GetoptError as err:
         # print help information and exit:
         print(err)  # will print something like "option -a not recognized"
-        print("See help: Main.py -h")
+        print("See help: main.py -h")
         exit(2)
     for o, a in opts:
         if o in ("-h"):
